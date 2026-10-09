@@ -19,8 +19,8 @@ public abstract class StringsPractice {
         return a+b+b+a;
     }
     public static String makeTags(String tag, String word){
-        String F = "<%s>".formatted(tag);
-        String E = "</%s>".formatted(tag);
+        String F = String.format("<%s>", tag);
+        String E = String.format("</%s>", tag);
         return F+word+E;
     }
 

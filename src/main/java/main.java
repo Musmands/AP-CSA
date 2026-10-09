@@ -1,4 +1,5 @@
 import UNIT1.Calculator;
+import UNIT1.StringsPractice;
 import UNIT1.Update;
 
 public class main {
@@ -8,7 +9,7 @@ public class main {
 
         Calculator calc = new Calculator(1,10);
 
-        Update.Display();
+        System.out.println(StringsPractice.makeTags("g" , "hello"));
 
     }
 }
