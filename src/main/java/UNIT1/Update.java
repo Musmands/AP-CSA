@@ -67,5 +67,7 @@ public abstract class Update {
                         ayanokoji.swap()
                 ));
 
+        input.close();
+
     }
 }
