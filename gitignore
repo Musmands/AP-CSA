@@ -7,6 +7,7 @@ target/
 ##Lockin
 # 1. Always track the .gitignore file itself
 !.gitignore
+out/
 
 # 2. Ignore everything else in the project root
 /*
