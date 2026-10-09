@@ -5,6 +5,8 @@ public class Calculator {
     //Code belongs to MUSMANDS/JENGJENG all use is allowed
     //I am not responsible for any punishment or academic infraction!
 
+    //sd
+
     double num1;
     double num2;
 
