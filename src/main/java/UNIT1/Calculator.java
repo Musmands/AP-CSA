@@ -29,5 +29,15 @@ public class Calculator {
     public double div(){
         return num1 / num2;
     }
-    public double
+    public double power(){
+        return Math.pow(num1, num2);
+    }
+    public double absDif(){
+        return Math.abs(num1-num2);
+    }
+    public double sqrtSum(){
+        return Math.sqrt(num1+num2);
+    }
+
+    //PrintStatement
 }
