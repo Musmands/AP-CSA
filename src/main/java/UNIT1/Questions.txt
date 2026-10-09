@@ -1,0 +1,36 @@
+4.
+    A)
+
+    I wrote it like Math.sqrt(num1+num2); but I suppose you can wirte it like
+
+    double sum = num1+num2;
+    return Math.sqrt(sum);
+
+    I thought my method was more efficent and just faster no one is developing
+    with me so just use less memory.
+
+    B)
+    public int randomBetween(){
+        int start = (int) num1;
+        int range = (int) (num2 - num1 + 1);
+
+        // For those reading || is or
+
+        if (num1 > num2 || range <= 0){
+            return 6767; // 6767 means the scope is cooked
+        } else {
+            return (int) (Math.random() * range) + start;
+        }
+    }
+    Im not ognna explain this one too much but it basically gets a dynamic range and formats everything
+    nicely it also denys range <= 0 and num1 > num2 cause I don't want negatives
+    im too tired it's like 11:00pm I wanna sleep
+
+    C)
+    Because string.subString truncates seeing that it only takes intergers
+    the extra part im pretty sure so it will just take the smaller piece
+
+    D)
+    I mean there was a logical error in my random function cause I was tired and got careless. Honestly?
+    it wasn't that hard to fix im going to sleep now bye.
+    23:27

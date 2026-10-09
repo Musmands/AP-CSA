@@ -1,4 +1,5 @@
 import UNIT1.Calculator;
+import UNIT1.Update;
 
 public class main {
     public static void main(String[] args){
@@ -7,9 +8,7 @@ public class main {
 
         Calculator calc = new Calculator(1,10);
 
-        for(int i = 0; i < 100; i++){
-            System.out.println(calc.randomBetween());
-        }
+        Update.Display();
 
     }
 }

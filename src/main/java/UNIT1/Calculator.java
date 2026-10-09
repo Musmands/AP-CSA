@@ -39,8 +39,15 @@ public class Calculator {
         return Math.sqrt(num1+num2);
     }
     public int randomBetween(){
-        return (int) (Math.random() * num2 + num1);
-    }
+        int start = (int) num1;
+        int range = (int) (num2 - num1 + 1);
 
-    //PrintStatement
+        // For those reading || is or
+
+        if (num1 > num2 || range <= 0){
+            return 6767; // 6767 means the scope is cooked
+        } else {
+            return (int) (Math.random() * range) + start;
+        }
+    }
 }
