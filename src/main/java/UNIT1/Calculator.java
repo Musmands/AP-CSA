@@ -13,8 +13,8 @@ public class Calculator {
         num2 = 2;
     }
     public Calculator(double num1, double num2){
-        num1 = this.num1;
-        num2 = this.num2;
+        this.num1 = num1;
+        this.num2 = num2;
     }
 
     public double add(){
@@ -37,6 +37,9 @@ public class Calculator {
     }
     public double sqrtSum(){
         return Math.sqrt(num1+num2);
+    }
+    public int randomBetween(){
+        return (int) (Math.random() * num2 + num1);
     }
 
     //PrintStatement
