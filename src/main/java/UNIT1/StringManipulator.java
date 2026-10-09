@@ -6,8 +6,8 @@ public class StringManipulator {
     //Code belongs to MUSMANDS/JENGJENG all use is allowed
     //I am not responsible for any punishment or academic infraction!
 
-    String text1;
-    String text2;
+    private String text1;
+    private String text2;
 
 
     public StringManipulator(){

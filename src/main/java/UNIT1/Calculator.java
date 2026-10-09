@@ -7,8 +7,8 @@ public class Calculator {
 
     //sd
 
-    double num1;
-    double num2;
+    private double num1;
+    private double num2;
 
     public Calculator(){
         num1 = 1;

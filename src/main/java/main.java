@@ -11,5 +11,9 @@ public class main {
 
         System.out.println(StringsPractice.makeTags("g" , "hello"));
 
+        double x = (double)(10/4) * (int)10/4 + (double)(10/4);
+
+        System.out.println(x);
+
     }
 }
