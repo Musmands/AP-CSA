@@ -7,11 +7,7 @@ public abstract class StringsPractice {
 
 
     //This includes coding bat and in class Hw
-    public static String extraEnd(String str){
-        if (str.length() < 2){return "Shorter than 2";}
-        String x = str.substring(str.length() - 2);
-        return x+x+x;
-    }
+
     public static String helloName(String str){
         return "Hello" + str + "!";
     }
@@ -19,10 +15,23 @@ public abstract class StringsPractice {
         return a+b+b+a;
     }
     public static String makeTags(String tag, String word){
+        //You could use String.formatted but coding bat doesn't allow for that since it uses an older java version
         String F = String.format("<%s>", tag);
         String E = String.format("</%s>", tag);
         return F+word+E;
     }
+    public static String makeOutWord(String out, String word){
+        int midPoint = out.length()/2;
+        String f = out.substring(0,midPoint);
+        String e = out.substring(midPoint);
+        return f+word+e;
+    }
+    public static String extraEnd(String str){
+        if (str.length() < 2){return "Shorter than 2";}
+        String x = str.substring(str.length() - 2);
+        return x+x+x;
+    }
+
 
 
 }
