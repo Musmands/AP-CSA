@@ -25,4 +25,4 @@ it's not anything too crazy :)
 - Calculator
 - StringManipulator
 - **Update** (This is the update function to show in correct format)
-- StringPractice (All coding bat)
+- StringPractice (All coding bat homework)
