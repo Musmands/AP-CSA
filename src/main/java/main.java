@@ -13,7 +13,9 @@ public class main {
 
         double x = (double)(10/4) * (int)10/4 + (double)(10/4);
 
-        System.out.println(x);
+        System.out.println(StringsPractice.lastChars("last", "Chars"));
+
+
 
     }
 }
