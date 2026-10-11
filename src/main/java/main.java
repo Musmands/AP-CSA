@@ -4,17 +4,13 @@ import UNIT1.Update;
 
 public class main {
     public static void main(String[] args){
+            //This is just for testing
+            // Yeah I removed some old stuff . 10.10.2026
 
-        //This is just for testing
-
-        Calculator calc = new Calculator(1,10);
-
-        System.out.println(StringsPractice.makeTags("g" , "hello"));
-
-        double x = (double)(10/4) * (int)10/4 + (double)(10/4);
-
-        System.out.println(StringsPractice.lastChars("last", "Chars"));
-
+            String a = "bananas";
+            String b = "apples";
+            int x = a.compareTo(b);
+            System.out.println(StringsPractice.minCat("Hello" , "Hi"));
 
 
     }
