@@ -234,6 +234,31 @@ public class StringsPractice {
     //
 
 
+    //Code HS HOMEWORK
+    //1.15.12
+    public static String hiddenMsg(){
+        String quote1 = "Coding like poetry";
+        String quote2 = "should be short";
+        String quote3 = "and concise.";
+        String author = "Santosh Kalwar";
+
+        return """
+                HIDDEN MESSAGE:
+                
+                1. %s
+                2. %s
+                3. %s
+                
+                By: %s
+                
+                """.formatted(quote1,
+                            quote2,
+                            quote3,
+                            author);
+    }
+
+
+
 
 
 

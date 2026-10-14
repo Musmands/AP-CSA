@@ -26,3 +26,6 @@ it's not anything too crazy :)
 - StringManipulator
 - **Update** (This is the update function to show in correct format)
 - StringPractice (All coding bat homework)
+
+### Unit 2:
+- ifStatementsPractice (This is the practice for CODEHS)

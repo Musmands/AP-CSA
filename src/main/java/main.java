@@ -12,6 +12,6 @@ public class main {
             int x = a.compareTo(b);
             System.out.println(StringsPractice.minCat("Hello" , "Hi"));
 
-
+            System.out.println(StringsPractice.hiddenMsg());
     }
 }
