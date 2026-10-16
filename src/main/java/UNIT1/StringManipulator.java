@@ -10,6 +10,7 @@ public class StringManipulator {
     private String text2;
 
 
+
     public StringManipulator(){
         text1 = "did";
         text2 = "dy";

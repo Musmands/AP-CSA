@@ -1,6 +1,6 @@
-import UNIT1.Calculator;
+import ClassWork.CodeHs;
+import ClassWork.SandBox;
 import UNIT1.StringsPractice;
-import UNIT1.Update;
 
 public class main {
     public static void main(String[] args){
@@ -12,6 +12,8 @@ public class main {
             int x = a.compareTo(b);
             System.out.println(StringsPractice.minCat("Hello" , "Hi"));
 
-            System.out.println(StringsPractice.hiddenMsg());
+
+            SandBox.costCalc();
+
     }
 }
