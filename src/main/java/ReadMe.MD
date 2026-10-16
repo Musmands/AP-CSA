@@ -20,6 +20,12 @@ P4APCSA2026-27
 ## Directories:
 So Basically the Update class is an abstract class with the function to send a formatted output
 it's not anything too crazy :)
+# Classwork: 
+(Includes the CODEHS and class assignments)
+
+-CodeHs is the CodeHs PEN assignments
+-SandBox are any sandbox programs (They may be coded haphazardly)
+
 ### Unit 1:
 #### Calculator and String Analyzer homework assignment:
 - Calculator
