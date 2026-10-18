@@ -23,8 +23,11 @@ it's not anything too crazy :)
 # Classwork: 
 (Includes the CODEHS and class assignments)
 
--CodeHs is the CodeHs PEN assignments
--SandBox are any sandbox programs (They may be coded haphazardly)
+- CodeHs is the CodeHs PEN assignments
+  - As of assignment 1.3.11 I will only be **doing the LAST assinment of every**
+  subunit (1.2.x 1.4.x etc.) Requests for more work is invited on the Github page
+  thank you for understanding
+- SandBox are any sandbox programs (They may be coded haphazardly)
 
 ### Unit 1:
 #### Calculator and String Analyzer homework assignment:

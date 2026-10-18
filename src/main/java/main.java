@@ -13,7 +13,7 @@ public class main {
             System.out.println(StringsPractice.minCat("Hello" , "Hi"));
 
 
-            SandBox.costCalc();
+            CodeHs.banking101();
 
 
     }
