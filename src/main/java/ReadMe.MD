@@ -27,6 +27,10 @@ it's not anything too crazy :)
   - As of assignment 1.3.11 I will only be **doing the LAST assinment of every**
   subunit (1.2.x 1.4.x etc.) Requests for more work is invited on the Github page
   thank you for understanding
+  - CodeHS has code HS 1-x a new CodeHs class is generated when the previous
+  one exeeds 5000 lines of java (Imported classes inclusive)
+  
+
 - SandBox are any sandbox programs (They may be coded haphazardly)
 
 ### Unit 1:
