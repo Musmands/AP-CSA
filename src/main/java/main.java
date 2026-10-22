@@ -5,8 +5,7 @@ import UNIT2.ConditionalsAB;
 public class main {
     public static void main(String[] args){
 
-
-        System.out.println(ConditionalsAB.gradeOutput());
+        ConditionalsAB.startProgram();
 
 
     }
