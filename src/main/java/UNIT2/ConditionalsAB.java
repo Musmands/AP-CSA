@@ -14,6 +14,8 @@ public class ConditionalsAB {
      */
     public static void startProgram(){
         Scanner in = new Scanner(System.in);
+
+        int totalMoney = 67;
         boolean programRunning = true;
         int helpCounter = 0;
 
@@ -27,6 +29,8 @@ public class ConditionalsAB {
         [2] = Rock Paper Scissors
         [3] = IPv4 tester
         [4] = Lottery
+        [5] = Work
+        [6] = Balance
         
         [404] = Help
         [67] = Exit program
@@ -42,15 +46,17 @@ public class ConditionalsAB {
                 case "1","grader","grade" -> System.out.println(gradeOutput(in));
                 case "2","rock","paper","scissors" -> System.out.println(rockPaperScissors(in));
                 case "3","ip","ipv4","tester" -> System.out.println(ipv4Tester(in));
-                case "4", "lottomax", "lotto", "lottery" -> System.out.println(lotteryWinner(in));
+                case "4", "lottomax", "lotto", "lottery", "lot" -> totalMoney += lotteryWinner(in, totalMoney);
+                case "5", "work" -> totalMoney = work(totalMoney);
+                case "6", "bal", "balance" -> System.out.println("You total money is: %s".formatted(totalMoney));
 
                 //Help function
                 case "404","help","h", "HELP" -> {
                     helpCounter += 1;
-                    if (helpCounter > 10){
+                    if (helpCounter >= 10){
                         System.out.println("You asked for help %s times already, are you okay dude...?".formatted(helpCounter));
                         continue;
-                    } else if (helpCounter > 20) {
+                    } else if (helpCounter >= 20) {
                         System.out.println("hhhhhhh why so many h? are you okay man?");
                     }
 
@@ -62,7 +68,8 @@ public class ConditionalsAB {
                     [1] = Grader
                     [2] = Rock Paper Scissors
                     [3] = IPv4 tester
-                    [4] = Lottery
+                    [4] = Lottery (Requires cash!)
+                    [5] = Work
                     
                     [404] = Help
                     [67] = Exit program
@@ -219,9 +226,14 @@ public class ConditionalsAB {
      * @param scanner Scanner input object
      * @return The winning results
      * */
-    public static String lotteryWinner(Scanner scanner){
+    public static int lotteryWinner(Scanner scanner, int money){
 
         Scanner in = scanner;
+
+        if (money < 20){
+            System.out.println("Get out brokiee you have $%s.".formatted(money));
+            return 0;
+        }
 
         System.out.println("Please enter two digits, these will be your lottery digits");
 
@@ -232,18 +244,34 @@ public class ConditionalsAB {
         int lotteryFirst = (int)(Math.random()*10);
         int lotterySecond = (int)(Math.random()*10);
 
-        System.out.println("Your lottery numbers are %s%s".formatted(userFirst,userSecond));
+        System.out.println("Your lottery numbers are %s%s\n the cpu chose %s%s".
+                formatted(userFirst,userSecond,lotteryFirst,lotterySecond));
+
 
         //Winning case
         if (userFirst == lotteryFirst && userSecond == lotterySecond){
-            return "You just hit the jackpot! +$10,000";
+            System.out.println("You just hit the jackpot! +$10,000");
+            return 10_000;
         } else if (userFirst == lotterySecond && userSecond == lotteryFirst) {
-            return "You won! +$2,000";
+            System.out.println("You won! +$2,000");
+            return 2_000;
         } else if (userFirst == lotteryFirst || userSecond == lotterySecond) {
-            return "Today is a lucky day. +$500";
+            System.out.println("Today is a lucky day. +$500");
+            return 500;
         } else {
-            return "Better luck next time! -$20";
+            System.out.println("Better luck next time! -$20");
+            return -20;
         }
+    }
+    public static int work(int money){
+        int earnings = (int)(Math.random()*101);
+
+        System.out.println("""
+        Money before: %s
+        You worked a hard days work for $%s
+        """.formatted(money ,earnings));
+
+        return money+earnings;
     }
 
 }
