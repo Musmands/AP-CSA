@@ -66,6 +66,7 @@ public class SandBox {
 
         //init
         String userInput;
+        String userInput3D;
         String studentID = "none";
         boolean hasStudentID = false;
         boolean wish3D = false;
@@ -88,31 +89,34 @@ public class SandBox {
 
         cost = STARTING_COST;
 
-        System.out.println("""
+        System.out.print("""
                 ===============================
                 Ryan Wu's movie prices:
                 ===============================
                 
-                Please enter your age as an int:
-                """);
+                Please enter your age as an int: """);
         age = in.nextInt();
         in.nextLine();
 
-        System.out.println("Thinking.... \n do you have a student id?");
+        System.out.print("Thinking.... \ndo you have a student id? ");
         userInput = in.nextLine().toLowerCase();
 
         switch (userInput){
             case "yes", "y", "true" -> {
-                hasStudentID = true;
                 System.out.print("Please enter your student ID: ");
                 studentID = in.nextLine();
+                hasStudentID = false;
 
                 if (studentID.length() == 7) {
+                    if (age >= SENIOR_AGE){
+                        System.out.println("Nice try gramps...");
+                        studentID = "expired in 1999";
+                    }
                     System.out.println("You have entered: %s".formatted(studentID));
+                    hasStudentID = true;
                 } else {
                     System.out.println("You have no such student id!\n");
                     studentID = "none";
-                    hasStudentID = false;
                 }
             }
             case "no", "n", "false" -> hasStudentID = false;
@@ -121,7 +125,15 @@ public class SandBox {
         }
 
 
-        wish3D = in.nextBoolean();
+        System.out.print("Do you want the movie in 3d? ");
+        userInput3D = in.nextLine().toLowerCase();
+
+        switch (userInput3D){
+            case "yes", "y", "true" -> wish3D = true;
+            case "no", "n", "false" -> wish3D = false;
+
+            default -> wish3D = false;
+        }
 
 
         //LOGICAL COMPONENT
@@ -138,30 +150,26 @@ public class SandBox {
         }
 
         if (wish3D){
-            cost += _3D_COST_ADD;
+            expense += _3D_COST_ADD;
         }
 
+        cost += expense;
         cost -= deductable;
 
         System.out.println("""
                 ===============================
                 Transcript:
                 ===============================
-                Starting cost: %s
+                Starting cost: $%s
                 StudentID: %s
                 Senior Citizen: %s
                 
-                deductible :-%s
-                3D cost :%s
+                deductible : -$%s
+                3D cost : $%s
                 
-                Cost : %s
+                Cost : $%s
                 ===============================
                 """.formatted(STARTING_COST,studentID,isSenior,deductable,expense,cost));
-
-
-
     }
-
-    //
 
 }
