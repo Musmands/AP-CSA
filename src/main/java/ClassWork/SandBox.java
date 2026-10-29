@@ -172,4 +172,34 @@ public class SandBox {
                 """.formatted(STARTING_COST,studentID,isSenior,deductable,expense,cost));
     }
 
+    public static void loopingFun(int v, int l){
+        int loops = l;
+        int value = v;
+        int loop = 0;
+
+        while (loop < loops){
+         int temp = (int)(Math.random()*9+1);
+
+         System.out.print(temp);
+         if (temp == value){
+             loop++;
+             System.out.println("");
+         }
+        }
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

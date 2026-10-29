@@ -5,7 +5,6 @@ import UNIT2.ConditionalsAB;
 
 public class main {
     public static void main(String[] args){
-
-
+        SandBox.loopingFun(1,67);
     }
 }
