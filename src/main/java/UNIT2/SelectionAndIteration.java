@@ -47,6 +47,42 @@ public class SelectionAndIteration {
         System.out.println("You got it! Took you " + guessCount + " guesses");
     }
 
+    public static void counting(){
+        final Scanner in = new Scanner(System.in);
+
+        int negga = 0;
+        int possa = 0;
+        int sum = 0;
+
+        System.out.print("Please enter a number of entries you want: ");
+
+        final int amount = in.nextInt();
+        in.nextLine();
+
+        for (int i = 0; i < amount; i++){
+            System.out.print("Please enter a integer: ");
+
+            int choice = in.nextInt();
+            in.nextLine();
+
+            if (choice < 0){
+                negga++;
+            } else {
+                possa++;
+            }
+
+            sum += choice;
+        }
+
+        System.out.printf("""
+                You entered %s negative numbers.
+                You entered %s positive numbers.
+                The average of your numbers is: %s
+                """, negga, possa, sum/amount);
+
+
+    }
+
 
 
 }
